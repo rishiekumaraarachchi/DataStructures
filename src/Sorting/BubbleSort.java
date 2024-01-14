@@ -19,6 +19,11 @@ public class BubbleSort {
                     swapped = true;
                 }
             }
+            System.out.print("Iteration "+(i+1)+" : ");
+            for (int j : arr) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
             if (!swapped){
                 break;
             }
