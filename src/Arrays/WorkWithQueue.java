@@ -13,7 +13,11 @@ public class WorkWithQueue {
         supermarkrt.add(new Person("Mike", 25));
 
         System.out.println(supermarkrt);
-        System.out.println(supermarkrt.peek()); //Peek returns the head of the queue, or null if the queue is empty.
+        System.out.println(supermarkrt.peek());
+        //Peek returns the head of the queue, or null if the queue is empty.
+        System.out.println(supermarkrt.poll());
+        //It retrieves and removes the head (first element) of the queue. If the queue is empty, it returns null.
+        System.out.println(supermarkrt);
     }
 
     static record Person(String name, int age) {//Records are implicitly final, and their components are implicitly final and private.
