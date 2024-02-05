@@ -1,31 +1,37 @@
 package Sorting;
 
-public class Insertion {
+public class Insertion{
     public static void main(String[] args) {
-        int [] arr = {1,4,5,6,2};
+        int[] arr = {12, 11, 13, 5, 6};
+
+        System.out.println("Array before sorting: ");
+        printArray(arr);
+
         insertionSort(arr);
 
+        System.out.println("Array after sorting: ");
+        printArray(arr);
     }
 
     public static void insertionSort(int[] arr) {
-        for (int i=0;i<arr.length;i++){
-            for (int j=i-1;j>=0;j--){
-                if (arr[j]>arr[j+1]){
-                    swap(arr,j,j+1);
-                }
-                else{
-                    break;
-                }
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            int key = arr[i];
+            int j = i - 1;
+
+            // Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
             }
-        }
-        for (int j : arr) {
-            System.out.print(j + " ");
+            arr[j + 1] = key;
         }
     }
 
-    public static void swap(int[] arr, int j, int i) {
-        int temp = arr[j];
-        arr[j]=arr[i];
-        arr[i]=temp;
+    public static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
     }
 }
