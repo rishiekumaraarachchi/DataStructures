@@ -32,9 +32,9 @@ class HardDrive {
 
 // Facade class providing a simplified interface to the subsystems
 class ComputerFacade {
-    private CPU cpu;
-    private Memory memory;
-    private HardDrive hardDrive;
+    private final CPU cpu;
+    private final Memory memory;
+    private final HardDrive hardDrive;
 
     public ComputerFacade() {
         this.cpu = new CPU();
