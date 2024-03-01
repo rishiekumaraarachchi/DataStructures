@@ -17,6 +17,7 @@ package Practices;
 //}
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class Duplicates {
     public static void main(String[] args) {
@@ -25,7 +26,7 @@ public class Duplicates {
         System.out.println("Duplicate elements in given array: ");
 
         // HashSet to store unique elements encountered
-        HashSet<Integer> set = new HashSet<>();
+       Set<Integer> set = new HashSet<>();
 
         for (int i = 0; i < arr.length; i++) {
             // If the element is already in the set, it's a duplicate
