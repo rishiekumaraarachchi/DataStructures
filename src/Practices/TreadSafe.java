@@ -2,8 +2,6 @@ package Practices;
 
 class Counter {
     int count;
-
-    // Synchronized method to increment the count
     public synchronized void increment() {
         count++;
     }
@@ -17,7 +15,7 @@ public class TreadSafe {
             for (int i = 1; i <= 1000; i++) {
                 c.increment();
                 try {
-                    Thread.sleep(10); // Introduce a delay of 10 milliseconds
+                    Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -28,7 +26,7 @@ public class TreadSafe {
             for (int i = 1; i <= 1000; i++) {
                 c.increment();
                 try {
-                    Thread.sleep(10); // Introduce a delay of 10 milliseconds
+                    Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -40,11 +38,10 @@ public class TreadSafe {
         t1.start();
         t2.start();
 
-        // Join t1 and t2 with the main thread
+
         t1.join();
         t2.join();
 
-        // After t1 and t2 have completed, print the value of c.count
         System.out.println(c.count);
     }
 }
