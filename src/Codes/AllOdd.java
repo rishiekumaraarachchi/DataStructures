@@ -15,10 +15,6 @@ public class AllOdd {
         }
         System.out.println("\nSum of all odd numbers is " + sum);
 
-        System.out.println();
-        Arrays.stream(arr)
-                .filter(num -> num % 2 != 0)
-                .forEach(System.out::println);
     }
 
 }
