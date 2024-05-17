@@ -14,7 +14,7 @@ public class PascalTangle {
             {
                 System.out.print("*"+ " ");
             }
-            System.out.println("");
+            System.out.println();
         }
         for (i=rows-1; i>=0; i--)
         {
@@ -22,7 +22,7 @@ public class PascalTangle {
             {
                 System.out.print("*"+ " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }
