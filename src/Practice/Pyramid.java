@@ -8,7 +8,7 @@ public class Pyramid {
     public static void drawStar() {
         int rows = 4;
         for (int i = 0; i < rows; i++) {
-            for (int k = rows-i ; k >1; k--) {
+            for (int k = rows-1; k >i; k--) {
                 System.out.print(" ");
             }
             for (int j = 0; j <= i; j++) {
