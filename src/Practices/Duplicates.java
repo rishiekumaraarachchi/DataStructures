@@ -28,10 +28,10 @@ public class Duplicates {
         // HashSet to store unique elements encountered
        Set<Integer> set = new HashSet<>();
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int j : arr) {
             // If the element is already in the set, it's a duplicate
-            if (!set.add(arr[i])) {
-                System.out.println(arr[i]);
+            if (!set.add(j)) {
+                System.out.println(j);
             }
         }
     }
