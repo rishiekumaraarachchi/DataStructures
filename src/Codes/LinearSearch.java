@@ -14,7 +14,6 @@ public class LinearSearch {
         }else {
             System.out.println("num not found");
         }
-
     }
 
     public static int linearSearch(int[] arr, int num) {
