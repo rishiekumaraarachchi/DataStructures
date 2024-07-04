@@ -31,9 +31,6 @@ public class ArraySorting {
                 }
             }
             // If no elements were swapped, break the loop
-            if (!swapped) {
-                break;
-            }
         }
     }
 
