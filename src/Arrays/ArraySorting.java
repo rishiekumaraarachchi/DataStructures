@@ -26,9 +26,14 @@ public class ArraySorting {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+                    swapped = true;
+
                 }
             }
             // If no elements were swapped, break the loop
+            if (!swapped) {
+                break;
+            }
         }
     }
 
