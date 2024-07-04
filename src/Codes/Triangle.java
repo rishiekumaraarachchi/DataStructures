@@ -20,5 +20,16 @@ public class Triangle {
             }
             System.out.println();
         }
+        for(int l=1;l<rows;l++){
+            for(int k=0; k<=l;k++){
+                System.out.print(" ");
+            }
+            for (int m=rows-l;m>0;m--){
+                System.out.print(" *");
+            }
+
+            System.out.println();
+        }
+
     }
 }
