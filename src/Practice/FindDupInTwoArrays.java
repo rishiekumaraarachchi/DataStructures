@@ -13,10 +13,10 @@ public class FindDupInTwoArrays {
 
     public static int[] findDup(int[] arr, int[] arr1) {
         ArrayList<Integer> duplicates = new ArrayList<>();
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr1.length; j++) {
-                if (arr[i] == arr1[j] && !duplicates.contains(arr[i])) {
-                    duplicates.add(arr[i]);
+        for (int k : arr) {
+            for (int i : arr1) {
+                if (k == i && !duplicates.contains(k)) {
+                    duplicates.add(k);
                     break;
                 }
             }
