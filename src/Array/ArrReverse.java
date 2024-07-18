@@ -1,13 +1,17 @@
-package Arrays;
+package Array;
 
 import java.util.Arrays;
 
-public class ArrayReverse {
+public class ArrReverse {
     public static void main(String[] args) {
-        int []arr = new int []{1,2,3,4,5,6};
-        System.out.println("Reversed array: " + Arrays.toString(arrayReverse(arr)));
+        int []arr = new int[]{1,2,3,4,5,6};
+        int [] reverse = reverseArray(arr);
+        for (int i =0; i< reverse.length-1;i++){
+            System.out.print(reverse[i]+",");
+        }
+
     }
-    public static int[] arrayReverse(int[] arr){
+    public static int[] reverseArray(int []arr){
         int left=0;
         int right = arr.length-1;
         while (left<right){
@@ -19,5 +23,4 @@ public class ArrayReverse {
         }
         return arr;
     }
-
 }

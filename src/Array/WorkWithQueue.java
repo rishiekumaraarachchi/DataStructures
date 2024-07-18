@@ -1,6 +1,4 @@
-package Arrays;
-
-import jdk.dynalink.beans.StaticClass;
+package Array;
 
 import java.util.LinkedList;
 import java.util.Queue;

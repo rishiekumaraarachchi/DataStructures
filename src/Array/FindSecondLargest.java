@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 public class FindSecondLargest {
     public static void main(String[] args) {
